@@ -1,8 +1,40 @@
 body {
-  min-height: 800px;
-  min-width: 800px;
+ min-height: 800px;
+ min-width: 800px;
 }
 
 .hide {
-  display: none;
+ display: none;
+}
+
+*:focus{
+ outline: none;
+}
+
+#main-header{
+ font-family: 'Monoton';
+ font-size: 130px;
+ border: 1px solid black;
+ border-radius: 12px;
+ text-align: center;
+}
+
+#login-container{
+ text-align: center;
+}
+
+#email, #password, #name, #birthday, #email-add{
+ padding: 12px;
+ min-width: 40px;
+ border-radius: 14px;
+}
+
+#login-btn, #signup-btn, #add-button{
+ font-family: "Helvetiva-Neue";
+ padding: 14.5px;
+ border-radius: 14px;
+ color: white;
+ background-color: #dbdbdb ;
+ border: none;
+ min-width: 50px;
 }
