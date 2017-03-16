@@ -1,0 +1,8 @@
+body {
+  min-height: 800px;
+  min-width: 800px;
+}
+
+.hide {
+  display: none;
+}

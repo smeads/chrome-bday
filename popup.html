@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Chrome Extension</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <section class="container"></section>
+
+    <script src="https://www.gstatic.com/firebasejs/3.7.2/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/3.7.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/3.7.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/3.7.1/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/3.7.1/firebase-messaging.js"></script>
+  <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyDKfG-o4jyx-gwqqXnMSnCt0bnHTAQiX0g",
+        authDomain: "chrome-extension-1932c.firebaseapp.com",
+        databaseURL: "https://chrome-extension-1932c.firebaseio.com",
+        storageBucket: "chrome-extension-1932c.appspot.com",
+        messagingSenderId: "616707332813"
+      };
+      firebase.initializeApp(config);
+
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+    <script type="text/javascript" src="scripts/auth.js"></script>
+    <script type="text/javascript" src="scripts/addContact.js"></script>
+  </body>
+</html>
