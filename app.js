@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
-  $('.container').append("<h1 id='main-header'>" + "Login/Signup" + "</h1>")
+  $('.container').append("<h1 id='main-header'>" + "REGARDS" + "</h1>")
   $('.container').append("<div id='login-container'></div>");
   $('.container').append("<button type='submit' id='logout-btn' class='hide'>" + "Logout" + "</button>");
   $('.container').append("<button id='add-btn' class='hide'>" + "Add" + "</button>");
@@ -12,9 +12,9 @@ $(document).ready(function() {
   $('#login-form').append("<button type='submit' id='signup-btn'>" + "SignUp" + "</button>");
   // BDday Form
   $(".container").append("<form class='hide' id='bday-form'></form>");
-  $("#bday-form").append("Name: " + "<input type='text' id='name' placeholder='name'/>");
-  $("#bday-form").append("Email: " + "<input type='email' id='email-add' placeholder='email'/>");
-  $("#bday-form").append("Birthday: " + "<input type='date' id='birthday'/>");
+  $("#bday-form").append("<input type='text' id='name' placeholder='name'/>");
+  $("#bday-form").append("<input type='email' id='email-add' placeholder='email'/>");
+  $("#bday-form").append("<input type='date' id='birthday'/>");
   $("#bday-form").append("<button id='submit-btn'>" + "Submit" +"</button>");
   // BDay List
   $(".container").append("<div class='hide' id='contact-list' style='border: 1px solid'><h1>" + "BDAY CONTACT LIST" + "</h1></div>")
@@ -30,7 +30,7 @@ $(document).ready(function() {
   // On login function
   function logIn() {
     console.log("logged In");
-    $('#main-header').text("B-Day List");
+    $('#main-header').text("ADD");
     $('#login-container').hide();
     $('#logout-btn').removeClass('hide');
     $('#add-btn').removeClass('hide');
@@ -72,7 +72,7 @@ $(document).ready(function() {
       console.log(birthdayData);
       console.log(emailData);
       $('#contact-list').removeClass();
-      $('#contact-list').append("<p class='name' style='border: 1px solid><strong>" + "Name: " + "</strong>" + nameData + "</p>");
+      $('#contact-list').append("<p class='birthday'><strong>" + "Name: " + "</strong>" + nameData + "</p>");
       $('#contact-list').append("<p class='birthday'><strong>" + "Birthday: " + "</strong>" + birthdayData + "</p>");
       $('#contact-list').append("<p class='email'><strong>" + "Email: " + "</strong>" + "<a href='#'>" + emailData + "</a></p>");
 
